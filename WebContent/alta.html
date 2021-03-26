@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">    <!--Jquery-->
+    
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!--Firestore-->
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-firestore.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Alta usuarios</h1>
+        <input type="text" id="nombre" placeholder="Nombre" class="form-control my-3">
+        <input type="text" id="apellido" placeholder="Apellido" class="form-control my-3">
+        <input type="text" id="fecha" placeholder="Fecha" class="form-control my-3">  
+        <button class="btn btn-info mb-3" id="boton" style="float: right" onclick="guardar()">Guardar</button> 
+    </div>
+<div class="container mt-3">
+    <table class="table table-dark">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellido</th>
+            <th scope="col">Fecha</th>
+          </tr>
+        </thead>
+        <tbody id="tabla">
+
+        </tbody>
+      </table>
+</div>
+<div class="container">
+    <a class="btn btn btn-secondary btn-lg mr-3" role="button" style="float: right" href = "http://localhost/Farebase/WebContent/index.html">Regesar</a>
+</div>
+    <script src="js/app.js"></script>
+    <script src="js/agregar.js"></script>
+</body>
+</html>
